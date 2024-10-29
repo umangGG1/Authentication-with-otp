@@ -9,8 +9,17 @@ const bodyparser = require('express').json;
 app.use(bodyparser());
 
 const cors = require("cors");
-app.use(cors());
-app.use(cors({ origin: ['http://localhost:5173'] }));
+const corsOptions = {
+    origin: '*', 
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, 
+    optionsSuccessStatus: 204 
+  };
+  
+  app.use(cors(corsOptions)); 
+  
+  
+  app.options('*', cors(corsOptions));
 
 app.use('/user' , userRouter);
 

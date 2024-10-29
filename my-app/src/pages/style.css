@@ -129,7 +129,7 @@
 
   @media only screen and (max-width: 1200px){
     .heading-text{
-        font-size: 0.1rem;
+        font-size: 2.4rem !important;
     }
   }
   @media only screen and (max-width: 950px){
@@ -145,12 +145,16 @@
     .main-login-right{
         width: 80% !important;
     }
+    .main-login-right-container{
+        width: 80% !important;
+    }
   }
   @media only screen and (max-width: 600px){
     .main-login-right{
         width: 100vw !important;
     }
     .main-login-right-container{
-        width: 80% !important;
+        width: 85% !important;
     }
   }
+  
