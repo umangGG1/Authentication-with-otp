@@ -10,6 +10,7 @@ app.use(bodyparser());
 
 const cors = require("cors");
 app.use(cors());
+app.use(cors({ origin: ['http://localhost:5173'] }));
 
 app.use('/user' , userRouter);
 
