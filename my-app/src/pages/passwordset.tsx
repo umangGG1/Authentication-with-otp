@@ -6,7 +6,7 @@ import Banner from "../component/loginbanner";
 const Pass: React.FC = () => {
   const [userId, setUserId] = useState<string>("");
   const [password, setPassword] = useState<string>("");
-  const { error, success, completeSignUp, user } = useAuth();
+  const {success, completeSignUp, user } = useAuth();
   const navigate = useNavigate();
   const [localError, setLocalError] = useState<string>("");
 
