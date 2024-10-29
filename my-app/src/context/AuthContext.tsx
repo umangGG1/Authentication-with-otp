@@ -18,7 +18,7 @@ const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
 
   const signUpStep1 = async (userData: { name: string; phone: string; email: string }) => {
     try {
-      const response = await fetch("http://localhost:3000/user/signup", {
+      const response = await fetch("https://opgauru-auth.onrender.com/user/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +45,7 @@ const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
 
   const verifyOtp = async (email: string | undefined, code: string) => {
     try {
-      const response = await fetch("http://localhost:3000/user/signup-step2", {
+      const response = await fetch("https://opgauru-auth.onrender.com/user/signup-step2", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
         ...user,
       };
 
-      const response = await fetch("http://localhost:3000/user/signup-step3", {
+      const response = await fetch("https://opgauru-auth.onrender.com/user/signup-step3", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
