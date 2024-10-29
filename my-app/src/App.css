@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rogan ExtraLight';
+}
+.main-login{
+    width: 100%;
+    display: flex;
+}
+
+.main-login-left{
+    background-color: #010334;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-login-left-logo{
+    height: 50vh;
+    padding-top: 5.3rem;
+}
+.main-login-left-text{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+}
+#banner-text{
+    color: #dfa114;
+    
+}
+.login-text{
+    color: white;
+    font-weight: lighter;
+}
+.main-login-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 51%;
+}
+.main-login-right-container{
+    min-height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+.main-login-right-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0rem;
+}
+.heading-text{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-right: 0.5rem;
+}
+.main-login-right-welcome{
+    margin: 0.5rem 0rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+.main-login-right-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem;
+    width: 100%;
+}
+.main-login-right-form input{
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: black;
+    margin-bottom: 2.5rem;
+    border: 1px solid #010334;
+    background-color: hsla(0, 0%, 100%, .4) !important;
+    line-height: 4.4%;
+}
+::placeholder{
+    color: black;
+}
+.main-login-exit-text{
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+.main-login-submit-btn{
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0rem;
+}
+#TnC-text{
+    font-weight: 700;
+}
+.main-login-submit-btn button{
+    background-color: #dfa114;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 700;
+    justify-content: center;
+    padding: 0.8rem;
+    width: 100%;
+}
